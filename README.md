@@ -26,14 +26,14 @@ Sicherheitseinstellungen und ein erstes Projekt mit Gedächtnis.
 **Windows** (PowerShell):
 
 ```
-git clone https://github.com/<org>/3k-ki-onboarding.git "$env:USERPROFILE\3k-ki-onboarding"
+git clone https://github.com/3k-digital/3k-ki-onboarding.git "$env:USERPROFILE\3k-ki-onboarding"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\3k-ki-onboarding\install\windows.ps1"
 ```
 
 **Mac** (Terminal):
 
 ```
-git clone https://github.com/<org>/3k-ki-onboarding.git ~/3k-ki-onboarding
+git clone https://github.com/3k-digital/3k-ki-onboarding.git ~/3k-ki-onboarding
 bash ~/3k-ki-onboarding/install/mac.sh
 ```
 

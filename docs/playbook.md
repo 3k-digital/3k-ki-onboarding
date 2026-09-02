@@ -76,14 +76,14 @@ Das sind die Fragen, die der Skill nicht stellen kann. Notizen dazu in die eigen
 Windows, in PowerShell (Startmenü, „PowerShell" tippen):
 
 ```
-git clone https://github.com/<org>/3k-ki-onboarding.git "$env:USERPROFILE\3k-ki-onboarding"
+git clone https://github.com/3k-digital/3k-ki-onboarding.git "$env:USERPROFILE\3k-ki-onboarding"
 powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\3k-ki-onboarding\install\windows.ps1"
 ```
 
 Mac, im Terminal:
 
 ```
-git clone https://github.com/<org>/3k-ki-onboarding.git ~/3k-ki-onboarding
+git clone https://github.com/3k-digital/3k-ki-onboarding.git ~/3k-ki-onboarding
 bash ~/3k-ki-onboarding/install/mac.sh
 ```
 
