@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(git push *)",
+      "PowerShell(git push *)",
+      "Bash(rm *)",
+      "Bash(rmdir *)",
+      "Bash(mv *)",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(Move-Item *)",
+      "mcp__*__send*",
+      "mcp__*__post*",
+      "mcp__*__upload*",
+      "mcp__*__create_shared_link*"
+    ]
+  }
+}
