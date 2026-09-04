@@ -54,7 +54,14 @@ Pfad erfragen (Desktop ist der Normalfall) und die Datei lesen.
 
 Die Person hat ChatGPT gerade offen oder öffnet es. Schritt für Schritt, **ein Schritt pro Nachricht**:
 
-1. In ChatGPT: **Einstellungen → Personalisierung → Erinnerungen → verwalten**.
+**Nenne nie, wo etwas auf dem Bildschirm liegt.** Kein „oben rechts", kein „unten links", kein
+„in der Seitenleiste" — du siehst den Bildschirm der Person nicht, und die Oberflächen unterscheiden
+sich zwischen App, Browser, Betriebssystem und Version. Eine falsche Ortsangabe lässt jemanden, der
+sich ohnehin unsicher fühlt, an sich selbst zweifeln. Benenne stattdessen, **worauf** geklickt wird:
+„Klick auf dein Profil", „öffne die Einstellungen". Findet die Person es nicht, frag nach, was sie
+sieht — rate nicht ein zweites Mal.
+
+1. In ChatGPT: **Profil → Einstellungen → Personalisierung → Erinnerungen → verwalten**.
 2. Alle Einträge markieren und kopieren, bis ganz nach unten scrollen. Falls vorhanden, den Text aus
    **Eigene Anweisungen** anhängen.
 3. Alles hier in den Chat einfügen.

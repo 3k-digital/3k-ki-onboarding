@@ -118,6 +118,10 @@ Danach: Claude Desktop, Tab „Code", Ordner `Claude-Projekte` wählen, `/einric
 ### `/einrichten` moderieren (20 min)
 
 - Der Kunde tippt oder wählt selbst. Du erklärst nur, wenn eine Frage unklar ist.
+- Bei der Frage nach dem Material im ersten Projekt: Solange die IT-Freigabe für echte Unterlagen
+  nicht geklärt ist, ist **„Freigabe noch offen"** die richtige Antwort, auch wenn der Kunde spontan
+  „echte Unterlagen" wählen will. Das ist der Unterschied zwischen einer Regel, die im Projekt steht,
+  und einer, die nur im Termin gesagt wurde.
 - Die erste Frage betrifft das bisherige KI-Werkzeug. Wer ChatGPT genutzt hat, sollte hier **nicht**
   reflexhaft „brauche ich nicht" wählen — einmal nachhaken lohnt sich, denn nachträglich ist es
   mühsamer. Bei „Heikel" und „Zu prüfen" nicht für den Kunden entscheiden, auch wenn es schneller ginge.

@@ -55,7 +55,7 @@ Nichts dabei kürzen oder glätten. Was hier fehlt, fehlt am Ende.
 
 Wichtig, sonst mischt sich genau der Kontext ein, den wir isolieren wollen:
 
-- Einen **temporären Chat** starten (Symbol oben rechts im Chatfenster), **oder**
+- Einen **temporären Chat** starten, **oder**
 - in den Einstellungen unter Personalisierung „Erinnerungen" und „auf Chatverlauf beziehen" vorübergehend
   ausschalten.
 
