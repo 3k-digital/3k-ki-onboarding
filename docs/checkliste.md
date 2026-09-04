@@ -5,7 +5,7 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 ## Vorab (eine Woche vorher)
 
 - [ ] Vorab-Mail geschickt (Windows- oder Mac-Variante)
-- [ ] Bei Kunden mit ChatGPT-Historie: Zusatzbaustein mitgeschickt, Link auf `wissensuebernahme-chatgpt.md`
+- [ ] Bei Kunden mit ChatGPT-Historie: Hinweis mitgeschickt, ChatGPT-Zugang griffbereit zu halten
 - [ ] Termin 90 min geblockt, Screenshare oder vor Ort geklärt
 - [ ] Repo-Link griffbereit
 
@@ -25,7 +25,7 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 - [ ] Claude Desktop, Ordner `Claude-Projekte` geöffnet
 
 **`/einrichten` (20 min)**
-- [ ] Nach ChatGPT-Wissen gefragt; bei Bedarf Kurzpfad gemacht (+10 min)
+- [ ] Nach ChatGPT-Wissen gefragt; bei Bedarf Kurzpfad gemacht (ca. 5 min)
 - [ ] „Zu prüfen" und „Heikel" gemeinsam durchgegangen, Kunde hat entschieden
 - [ ] Fünf Fragen beantwortet, Kunde hat selbst getippt
 - [ ] CLAUDE.md gemeinsam gelesen

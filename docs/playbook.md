@@ -50,18 +50,16 @@ Ziel: Der Termin startet ohne Downloads und Wartezeiten. Textbausteine, Anrede a
 
 **Zusatz für Kunden, die schon länger mit ChatGPT arbeiten**
 
-Dieser Baustein kommt zu Windows oder Mac dazu, er ersetzt sie nicht. Ohne ihn geht das bisherige
-Wissen des Kunden verloren, und das merkt er in der zweiten Woche.
+Nur ein Hinweis, **keine Hausaufgabe**. Die Übernahme selbst passiert im Termin (siehe unten) — sie
+dauert etwa fünf Minuten und braucht ohnehin deine Moderation, weil der Kunde entscheiden muss, was
+aus seinen Erinnerungen mitkommt.
 
-> Du arbeitest ja schon eine Weile mit ChatGPT. Damit das Gelernte nicht verloren geht, gibt es eine
-> kurze Anleitung, wie du dieses Wissen in eine Datei bringst, die wir im Termin übernehmen können.
-> Rechne mit 20–30 Minuten. Die Anleitung findest du hier: <Link auf docs/wissensuebernahme-chatgpt.md>
->
-> Falls du nicht dazu kommst: kein Problem. Sag es im Termin, dann holen wir das Wichtigste in zehn
-> Minuten gemeinsam nach.
+> Du arbeitest ja schon eine Weile mit ChatGPT. Das dort entstandene Wissen über deine Arbeitsweise
+> nehmen wir im Termin mit — dafür musst du nichts vorbereiten. Halte nur deinen ChatGPT-Zugang
+> griffbereit, damit wir uns dort kurz einloggen können.
 
-Rechtzeitig schicken — mindestens drei Tage vor dem Termin, sonst entsteht die Datei unter Zeitdruck
-und wird nicht geprüft.
+Der einzige Grund für diese Zeile ist das Passwort: Wer sich im Termin nicht einloggen kann, verliert
+den Kurzpfad, und nachträglich wird es mühsamer.
 
 ## Phase 1 — Termin (ca. 90 Minuten)
 
@@ -69,8 +67,7 @@ und wird nicht geprüft.
 |---|---|---|
 | Gespräch | 15 min | siehe Leitfaden unten |
 | Installation | 10 min | Repo clonen, Install-Script ausführen |
-| `/einrichten` | 20 min | Kunde antwortet, du moderierst |
-| ↳ ChatGPT-Kurzpfad | +10 min | nur falls der Kunde seine Erinnerungen mitnehmen will und nichts vorbereitet hat |
+| `/einrichten` | 20 min | Kunde antwortet, du moderierst; enthält bei ChatGPT-Vorgeschichte den Kurzpfad (ca. 5 min) |
 | Erste Aufgabe | 30 min | gemeinsam im neuen Projekt |
 | Abschluss | 10 min | `/feierabend` zeigen, Limits erklären |
 
@@ -170,8 +167,10 @@ Permission-Prompt ist, wenn der erste erscheint: „Claude fragt, bevor es etwas
   fällt im nächsten Gespräch mit seiner IT auf ihn zurück.
 - **Kunde fragt nach Postfach-Zugriff.** Geht, aber nicht heute: `m365-connector.md`. Im Termin nicht
   anfangen, sonst hängt die verbleibende Zeit an einer Freigabe, die niemand im Raum erteilen kann.
-- **Vorwissen-Datei aus ChatGPT fehlt.** Der Normalfall, kein Grund umzuplanen. `/einrichten` fragt
-  nicht nach einer Datei, sondern danach, ob der Kunde sein ChatGPT-Wissen mitnehmen *will*, und bietet
-  einen Kurzpfad an: Erinnerungsliste in ChatGPT kopieren, hier einwerfen, Claude baut die Datei. Kostet
-  etwa zehn Minuten. Das Durchsehen der Datei bleibt Hausaufgabe — bis auf die Abschnitte „Zu prüfen"
-  und „Heikel", die im Termin einzeln durchgegangen werden.
+- **ChatGPT-Wissen übernehmen** ist Teil des Termins, keine Hausaufgabe. `/einrichten` fragt nicht nach
+  einer Datei, sondern danach, ob der Kunde sein ChatGPT-Wissen mitnehmen *will*, und geht dann den
+  Kurzpfad: Erinnerungsliste in ChatGPT kopieren, einwerfen, Claude baut die Datei. Etwa fünf Minuten.
+  „Zu prüfen" und „Heikel" gehst du gemeinsam durch — das ist der Teil, der Moderation braucht; den
+  Rest sieht der Kunde später in Ruhe durch.
+- **Kunde kommt ohne ChatGPT-Zugang.** Dann entfällt der Kurzpfad. Kein Drama: `docs/wissensuebernahme-chatgpt.md`
+  mitgeben, er macht es zu Hause und bringt die Datei zum Folgetermin mit.

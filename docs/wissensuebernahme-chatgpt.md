@@ -4,7 +4,13 @@ Für Kunden, die vor dem Onboarding schon Wochen oder Monate mit ChatGPT gearbei
 einzige Datei `wissen-aus-chatgpt.md`, die der Kunde **selbst erzeugt, selbst liest und selbst freigibt**,
 und die beim Termin in `/einrichten` einfließt.
 
-Der Kunde macht das vor dem Termin allein. Rechne mit 20–30 Minuten.
+**Der Normalfall ist der Kurzpfad im Termin.** `/einrichten` fragt danach und führt durch die Schritte;
+das dauert etwa fünf Minuten, und die heiklen Entscheidungen trifft der Kunde mit dir zusammen statt
+allein am Küchentisch. Dieses Dokument ist die Referenz dahinter — die Faktenlage, der vollständige
+Prompt, die Liste der Kontexttypen.
+
+Als Hausaufgabe taugt es trotzdem, in zwei Fällen: Der Kunde hat im Termin keinen ChatGPT-Zugang, oder
+er will hinterher gründlicher nacharbeiten, als die fünf Minuten hergeben. Dann rechne mit 20–30 Minuten.
 
 ## Warum nicht einfach exportieren
 
