@@ -24,6 +24,19 @@ Wurde ein Projektname als Argument übergeben, entfällt die erste Frage.
 3. **Woran merkst du, dass es fertig ist?** → `{{fertig}}`.
 4. **Art:** Texte (Default) · Daten/Tabellen · Web · Sonstiges → `{{art}}`.
 
+Geht es erkennbar um ein **berufliches** Thema — Kunden, Verträge, Angebote, Bewerbungen, Personal,
+Rechnungen —, kommt eine fünfte Frage dazu: **Was legst du in `material/` ab?**
+
+| Option | Slot `{{datenregel}}` |
+|---|---|
+| Erfundene oder anonymisierte Beispiele **(Default)** | „In `material/` liegen nur anonymisierte oder erfundene Beispiele. Weise mich darauf hin, wenn eine Datei echte Namen, Firmen oder Vertragsdaten zu enthalten scheint." |
+| Echte Unterlagen, die Freigabe dafür ist geklärt | „In `material/` dürfen echte Unterlagen liegen; die Freigabe dafür ist geklärt. Nichts davon verlässt diesen Ordner ohne meine ausdrückliche Zustimmung." |
+| Echte Unterlagen, Freigabe noch offen | „Die Freigabe für echte Unterlagen ist noch nicht geklärt. Bis dahin gehören nur anonymisierte oder erfundene Beispiele in `material/`. Sag mir Bescheid, wenn eine Datei echt aussieht." |
+
+Frag das ohne erhobenen Zeigefinger — es ist eine Sachfrage, keine Belehrung. Bei privaten Themen
+(Hobby, Verein, Familie) entfällt sie, `{{datenregel}}` bleibt leer und der Abschnitt im Template
+wird weggelassen.
+
 ## Schritt 2 — Slug bilden
 
 Aus `{{projektname}}`: Kleinbuchstaben, ä→ae ö→oe ü→ue ß→ss, Leerzeichen→`-`, alles außer `a-z0-9-` entfernen,
@@ -43,7 +56,8 @@ bestehenden Ordner schreiben.
 ## Schritt 4 — Erste Aufgabe
 
 Schlage **eine** Aufgabe vor, die in zehn Minuten ein sichtbares Ergebnis in `ergebnis/` bringt, und trage sie
-in `HANDOFF.md` unter „Nächster Schritt" ein. Dann fragen: **Jetzt loslegen** oder **Später**.
+in `HANDOFF.md` unter „Nächster Schritt" ein. Dann direkt anfangen — keine Auswahlfrage, ein Satz
+genügt: „Ich schlage vor, wir machen als Erstes … — sag Stopp, wenn du lieber etwas anderes möchtest."
 
 ## Schritt 5 — Abschluss
 

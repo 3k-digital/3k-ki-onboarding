@@ -18,6 +18,10 @@
 - `material/` — was ich mitbringe (Texte, Bilder, Tabellen). Nur lesen, nie ändern.
 - `ergebnis/` — was in diesem Projekt entsteht.
 
+## Material
+
+{{datenregel}}
+
 ## Arbeitsweise
 
 - Kleine Schritte: ein Ergebnis pro Aufgabe, zeigen, dann weiter.

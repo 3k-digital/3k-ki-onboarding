@@ -57,7 +57,8 @@ Wissen des Kunden verloren, und das merkt er in der zweiten Woche.
 > kurze Anleitung, wie du dieses Wissen in eine Datei bringst, die wir im Termin übernehmen können.
 > Rechne mit 20–30 Minuten. Die Anleitung findest du hier: <Link auf docs/wissensuebernahme-chatgpt.md>
 >
-> Falls du nicht dazu kommst: kein Problem, wir starten dann ohne.
+> Falls du nicht dazu kommst: kein Problem. Sag es im Termin, dann holen wir das Wichtigste in zehn
+> Minuten gemeinsam nach.
 
 Rechtzeitig schicken — mindestens drei Tage vor dem Termin, sonst entsteht die Datei unter Zeitdruck
 und wird nicht geprüft.
@@ -69,6 +70,7 @@ und wird nicht geprüft.
 | Gespräch | 15 min | siehe Leitfaden unten |
 | Installation | 10 min | Repo clonen, Install-Script ausführen |
 | `/einrichten` | 20 min | Kunde antwortet, du moderierst |
+| ↳ ChatGPT-Kurzpfad | +10 min | nur falls der Kunde seine Erinnerungen mitnehmen will und nichts vorbereitet hat |
 | Erste Aufgabe | 30 min | gemeinsam im neuen Projekt |
 | Abschluss | 10 min | `/feierabend` zeigen, Limits erklären |
 
@@ -116,6 +118,9 @@ Danach: Claude Desktop, Tab „Code", Ordner `Claude-Projekte` wählen, `/einric
 ### `/einrichten` moderieren (20 min)
 
 - Der Kunde tippt oder wählt selbst. Du erklärst nur, wenn eine Frage unklar ist.
+- Die erste Frage betrifft das bisherige KI-Werkzeug. Wer ChatGPT genutzt hat, sollte hier **nicht**
+  reflexhaft „brauche ich nicht" wählen — einmal nachhaken lohnt sich, denn nachträglich ist es
+  mühsamer. Bei „Heikel" und „Zu prüfen" nicht für den Kunden entscheiden, auch wenn es schneller ginge.
 - Bei Frage 3 (Erklär-Tiefe) lieber eine Stufe vorsichtiger wählen. Hochstufen geht später jederzeit.
 - Nach dem Interview zeigt Claude die generierte CLAUDE.md. Kurz gemeinsam durchlesen: „Das sind deine
   Regeln, die kannst du jederzeit ändern."
@@ -161,5 +166,8 @@ Permission-Prompt ist, wenn der erste erscheint: „Claude fragt, bevor es etwas
   fällt im nächsten Gespräch mit seiner IT auf ihn zurück.
 - **Kunde fragt nach Postfach-Zugriff.** Geht, aber nicht heute: `m365-connector.md`. Im Termin nicht
   anfangen, sonst hängt die verbleibende Zeit an einer Freigabe, die niemand im Raum erteilen kann.
-- **Vorwissen-Datei aus ChatGPT fehlt oder ist unbrauchbar.** Kein Grund umzuplanen. `/einrichten`
-  fragt einmal danach und läuft ohne genauso durch.
+- **Vorwissen-Datei aus ChatGPT fehlt.** Der Normalfall, kein Grund umzuplanen. `/einrichten` fragt
+  nicht nach einer Datei, sondern danach, ob der Kunde sein ChatGPT-Wissen mitnehmen *will*, und bietet
+  einen Kurzpfad an: Erinnerungsliste in ChatGPT kopieren, hier einwerfen, Claude baut die Datei. Kostet
+  etwa zehn Minuten. Das Durchsehen der Datei bleibt Hausaufgabe — bis auf die Abschnitte „Zu prüfen"
+  und „Heikel", die im Termin einzeln durchgegangen werden.

@@ -25,7 +25,8 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 - [ ] Claude Desktop, Ordner `Claude-Projekte` geöffnet
 
 **`/einrichten` (20 min)**
-- [ ] Nach Vorwissen-Datei gefragt, falls vorhanden gemeinsam durchgesehen
+- [ ] Nach ChatGPT-Wissen gefragt; bei Bedarf Kurzpfad gemacht (+10 min)
+- [ ] „Zu prüfen" und „Heikel" gemeinsam durchgegangen, Kunde hat entschieden
 - [ ] Fünf Fragen beantwortet, Kunde hat selbst getippt
 - [ ] CLAUDE.md gemeinsam gelesen
 - [ ] settings.json übernommen (oder bewusst behalten)
