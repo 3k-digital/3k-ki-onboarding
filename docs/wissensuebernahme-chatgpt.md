@@ -84,6 +84,10 @@ Du erstellst aus meiner untenstehenden Liste eine Markdown-Datei. Halte dich str
    konkretisiere oder verstärke keine Aussage.
 6. Lass einen Abschnitt leer, wenn die Liste dazu nichts hergibt. Schreibe dann darunter nur
    "(nichts in der Liste)". Fülle nichts mit Plausiblem auf.
+7. Sind zwei Einträge inhaltlich gleich, schreibe den Punkt einmal und nenne beide Quellen-IDs,
+   zum Beispiel (M03, M04).
+8. Einträge zu Gesundheit, Medikamenten, Finanzen, Religion, Politik oder zu benannten dritten
+   Personen kommen nicht in die inhaltlichen Abschnitte, sondern ausschließlich unter "Heikel".
 
 Gib ausschließlich die fertige Markdown-Datei aus, ohne Vorrede und ohne Schlusskommentar. Aufbau:
 
@@ -99,6 +103,8 @@ Stand: <heutiges Datum>
 (alles Konkrete und Zeitgebundene: aktuelle Projekte, Firmen, Personen, Kundendaten)
 ## Zu prüfen
 (Widersprüche, Veraltetes, Unklares — wortgetreu mit Quellen-ID)
+## Heikel
+(Gesundheit, Finanzen, Dritte — wortgetreu mit Quellen-ID, damit ich es bewusst streichen kann)
 
 <memory_list>
 HIER DIE KOPIERTE LISTE EINFÜGEN
@@ -110,8 +116,9 @@ HIER DIE KOPIERTE LISTE EINFÜGEN
 Der Kunde liest die Datei einmal ganz durch und streicht:
 
 - alles, was nicht stimmt oder überholt ist,
-- alles, was in einem Arbeitswerkzeug nichts zu suchen hat — Gesundheitliches, Privates, Finanzen,
-  Namen Dritter, die nichts mit der Arbeit zu tun haben,
+- den kompletten Abschnitt „Heikel", sofern nicht ein einzelner Punkt wirklich für die Arbeit gebraucht
+  wird — er ist genau dafür da, dass Gesundheitliches, Finanzen und Namen Dritter nicht unbemerkt
+  mitwandern,
 - alles unter „Zu prüfen", was sich nicht auflösen lässt.
 
 Das ist kein Formalismus. Was hier stehen bleibt, liest Claude künftig bei jedem Start mit.
