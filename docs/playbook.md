@@ -25,13 +25,20 @@ Cowork-Tab fängt jedes Mal von vorne an."*
 
 Ziel: Der Termin startet ohne Downloads und Wartezeiten. Textbausteine, Anrede anpassen.
 
+Punkt 1 und 2 (Abo, Desktop-App) sind Pflicht — ohne sie ist der Termin verloren. **Punkt 3 (Git bzw.
+Command Line Tools) ist ausdrücklich optional.** Wer nicht regelmäßig etwas installiert, scheitert daran
+allein oder installiert das Falsche, und beides kostet im Termin mehr Zeit, als gemeinsam neu anzufangen.
+Besser als eine Hausaufgabe, die niemand macht: **ein kurzes Teams-Gespräch ein paar Tage vorher**, in
+dem Abo, App und Git zusammen erledigt werden. Dann bleiben die 90 Minuten für den Inhalt.
+
 **Windows**
 
 > Damit wir beim Termin direkt loslegen können, bitte vorher drei Dinge erledigen:
 > 1. Claude-Abo „Pro" abschließen (claude.ai, ca. 20 $/Monat, monatlich kündbar).
 > 2. Claude Desktop installieren, einmal öffnen, anmelden und den Tab „Code" anklicken.
 >    Download: https://claude.ai/download
-> 3. Git for Windows installieren (Standard-Einstellungen durchklicken), danach Claude Desktop neu starten.
+> 3. **Falls du dir das zutraust** — sonst überspringen, wir machen es gemeinsam: Git for Windows
+>    installieren (Standard-Einstellungen durchklicken), danach Claude Desktop neu starten.
 >    Download: https://git-scm.com/downloads/win
 >
 > Wenn etwas hakt: nichts weiter versuchen, wir klären es im Termin.
@@ -42,9 +49,10 @@ Ziel: Der Termin startet ohne Downloads und Wartezeiten. Textbausteine, Anrede a
 > 1. Claude-Abo „Pro" abschließen (claude.ai, ca. 20 $/Monat, monatlich kündbar).
 > 2. Claude Desktop installieren, einmal öffnen, anmelden und den Tab „Code" anklicken.
 >    Download: https://claude.ai/download
-> 3. Programm „Terminal" öffnen (Spotlight: cmd+Leertaste, „Terminal" tippen), `git --version` eingeben,
->    Enter. Erscheint eine Versionsnummer, ist alles da. Erscheint ein Dialog zur Installation der
->    „Command Line Tools": bestätigen und warten, das kann einige Minuten dauern.
+> 3. **Falls du dir das zutraust** — sonst überspringen, wir machen es gemeinsam: Programm „Terminal"
+>    öffnen (Spotlight: cmd+Leertaste, „Terminal" tippen), `git --version` eingeben, Enter. Erscheint
+>    eine Versionsnummer, ist alles da. Erscheint ein Dialog zur Installation der „Command Line Tools":
+>    bestätigen und warten, das kann einige Minuten dauern.
 >
 > Wenn etwas hakt: nichts weiter versuchen, wir klären es im Termin.
 
@@ -66,7 +74,7 @@ den Kurzpfad, und nachträglich wird es mühsamer.
 | Block | Zeit | Inhalt |
 |---|---|---|
 | Gespräch | 15 min | siehe Leitfaden unten |
-| Installation | 10 min | Repo clonen, Install-Script ausführen |
+| Installation | 10 min | Repo clonen, Install-Script ausführen. **20 min**, falls Git bzw. Command Line Tools noch fehlen |
 | `/einrichten` | 20 min | Kunde antwortet, du moderierst; enthält bei ChatGPT-Vorgeschichte den Kurzpfad (ca. 5 min) |
 | Erste Aufgabe | 30 min | gemeinsam im neuen Projekt |
 | Abschluss | 10 min | `/feierabend` zeigen, Limits erklären |
@@ -153,7 +161,8 @@ Permission-Prompt ist, wenn der erste erscheint: „Claude fragt, bevor es etwas
 
 ## Stolpersteine
 
-- **Git fehlt** (Windows): Code-Tab startet nicht oder Install-Script bricht ab. Git for Windows nachinstallieren, Claude neu starten.
+- **Git fehlt** (Windows): Code-Tab startet nicht oder Install-Script bricht ab. Git for Windows nachinstallieren, Claude neu starten. Der Regelfall, nicht die Ausnahme — Zeit dafür einplanen.
+- **Command Line Tools fehlen** (Mac): `install/mac.sh` bricht mit einer Meldung ab. `git --version` im Terminal eingeben, Dialog bestätigen, warten. Dauert je nach Leitung mehrere Minuten und lässt sich nicht beschleunigen; in der Zeit das Gespräch weiterführen statt schweigend zuzusehen.
 - **Claude Desktop nie geöffnet**: `~/.claude` existiert nicht, Script bricht ab. Einmal öffnen, anmelden, Tab „Code".
 - **Windows-Benutzerordner mit Leerzeichen oder Umlaut**: Script warnt. Meist harmlos; bei „Datei nicht gefunden" zuerst hier nachsehen.
 - **Mac-Gatekeeper-Dialoge**: „App aus dem Internet geladen" bei Claude Desktop, Command-Line-Tools-Dialog bei `git --version`. Beides bestätigen, warten.

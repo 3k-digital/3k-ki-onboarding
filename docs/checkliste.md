@@ -4,7 +4,8 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 
 ## Vorab (eine Woche vorher)
 
-- [ ] Vorab-Mail geschickt (Windows- oder Mac-Variante)
+- [ ] Vorab-Mail geschickt (Windows- oder Mac-Variante); Git/CLT darin als optional gekennzeichnet
+- [ ] Falls möglich: kurzes Teams-Gespräch vorab für Abo, App und Git — spart im Termin 10 Minuten
 - [ ] Bei Kunden mit ChatGPT-Historie: Hinweis mitgeschickt, ChatGPT-Zugang griffbereit zu halten
 - [ ] Termin 90 min geblockt, Screenshare oder vor Ort geklärt
 - [ ] Repo-Link griffbereit
@@ -19,7 +20,7 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 
 **Installation (10 min)**
 - [ ] Abo aktiv, Claude Desktop geöffnet, Tab „Code" war schon offen
-- [ ] `git --version` zeigt Versionsnummer
+- [ ] `git --version` zeigt Versionsnummer (sonst: jetzt gemeinsam installieren, +10 min)
 - [ ] Repo geclont
 - [ ] Install-Script gelaufen, keine `ABBRUCH`-Zeile, Warnungen gelesen
 - [ ] Claude Desktop, Ordner `Claude-Projekte` geöffnet
