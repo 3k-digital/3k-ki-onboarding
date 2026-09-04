@@ -12,7 +12,7 @@ Sicherheitseinstellungen und ein erstes Projekt mit Gedächtnis.
 | `skills/einrichten` | `/einrichten` — fünf Fragen, dann globale `CLAUDE.md`, `settings.json` und erstes Projekt. |
 | `skills/neues-projekt` | `/neues-projekt` — legt später weitere Projekte an. |
 | `skills/feierabend` | `/feierabend` — schreibt am Ende einer Session den Stand in die `HANDOFF.md`. |
-| `docs/` | Playbook und Checkliste für die Person, die das Onboarding durchführt. |
+| `docs/` | Playbook und Checkliste für die Person, die das Onboarding durchführt, plus zwei Anleitungen: Wissen aus ChatGPT übernehmen, Microsoft 365 anbinden. |
 
 ## Voraussetzungen
 

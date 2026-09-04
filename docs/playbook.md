@@ -48,6 +48,20 @@ Ziel: Der Termin startet ohne Downloads und Wartezeiten. Textbausteine, Anrede a
 >
 > Wenn etwas hakt: nichts weiter versuchen, wir klären es im Termin.
 
+**Zusatz für Kunden, die schon länger mit ChatGPT arbeiten**
+
+Dieser Baustein kommt zu Windows oder Mac dazu, er ersetzt sie nicht. Ohne ihn geht das bisherige
+Wissen des Kunden verloren, und das merkt er in der zweiten Woche.
+
+> Du arbeitest ja schon eine Weile mit ChatGPT. Damit das Gelernte nicht verloren geht, gibt es eine
+> kurze Anleitung, wie du dieses Wissen in eine Datei bringst, die wir im Termin übernehmen können.
+> Rechne mit 20–30 Minuten. Die Anleitung findest du hier: <Link auf docs/wissensuebernahme-chatgpt.md>
+>
+> Falls du nicht dazu kommst: kein Problem, wir starten dann ohne.
+
+Rechtzeitig schicken — mindestens drei Tage vor dem Termin, sonst entsteht die Datei unter Zeitdruck
+und wird nicht geprüft.
+
 ## Phase 1 — Termin (ca. 90 Minuten)
 
 | Block | Zeit | Inhalt |
@@ -65,10 +79,19 @@ Das sind die Fragen, die der Skill nicht stellen kann. Notizen dazu in die eigen
 1. **Bisherige KI-Nutzung.** Was wurde probiert (ChatGPT im Browser, Copilot, nichts)? Was hat genervt?
    Typisch: Kontext geht verloren, Copy-Paste-Schleifen, Ergebnisse müssen nachbearbeitet werden.
    Das ist der Aufhänger für „Projekt mit Gedächtnis".
+   Bei **Copilot** eine Frage weiter: Ist es das kostenlose Copilot Chat oder das kostenpflichtige
+   Add-on? Das entscheidet, ob Copilot automatisch über Postfach und SharePoint suchen kann oder nur
+   mit dem arbeitet, was gerade offen oder hochgeladen ist. Weiß der Kunde es nicht — der Normalfall —,
+   ist das kein Problem: dann ist es eine Frage an seine IT und keine, die im Termin geklärt wird.
+   Details in `m365-connector.md`.
 2. **Ängste und Erwartungen.** Was soll auf keinen Fall passieren (Daten weg, etwas verschickt, Kosten)?
    Was wäre in vier Wochen ein Erfolg? Beides wörtlich notieren, es taucht in der Nachbereitung wieder auf.
-3. **Leidenschaftsthema finden.** Kein Arbeits-Schmerzpunkt. Hobby, Verein, Familie, Reise, Sammlung.
-   Kriterium: Die Person redet von selbst weiter. Das wird Frage 5 in `/einrichten`.
+3. **Einstiegsthema finden.** Kriterium: Die Person redet von selbst weiter. Das wird Frage 5 in
+   `/einrichten`. Erste Wahl bleibt ein Leidenschaftsthema — Hobby, Verein, Familie, Reise, Sammlung.
+   Bringt jemand von sich aus sein Arbeitsthema mit, ist die Frage nicht „privat oder Arbeit", sondern:
+   **kommt es ohne Systemzugriff aus?** Texte, Vorlagen, Formulierungen, eingeworfene Beispiele: ja,
+   dann ist es sogar das bessere Projekt, weil die Motivation schon da ist. Braucht es Postfach,
+   Laufwerk oder Fachanwendung: privates Thema nehmen, das andere als Projekt zwei terminieren.
 4. **Warum nicht Cowork** in einem Satz, falls die Frage kommt (siehe oben).
 
 ### Installation (10 min)
@@ -99,7 +122,12 @@ Danach: Claude Desktop, Tab „Code", Ordner `Claude-Projekte` wählen, `/einric
 
 ### Erste Aufgabe (30 min)
 
-Claude schlägt eine Aufgabe vor. Ziel ist ein sichtbares Ergebnis in `ergebnis/`. Der Kunde formuliert
+Claude schlägt eine Aufgabe vor. Ziel ist ein sichtbares Ergebnis in `ergebnis/`.
+
+**Wenn mit Arbeitsmaterial gearbeitet wird: nur anonymisierte oder erfundene Beispiele.** Ein echter
+Geschäfts-Thread per Copy-Paste in ein persönliches Claude-Konto ist ein Datentransfer an einen externen
+Dienst — auch ohne Connector, nur eben ohne Freigabe und ohne Protokoll. Für eine Demo macht es keinen
+Unterschied, für die Anschlussfähigkeit beim Kunden sehr wohl. Einmal ansprechen, nicht dramatisieren. Der Kunde formuliert
 selbst, du hältst dich zurück. Wenn Claude nachfragt, lässt du den Kunden antworten. Erklären, was ein
 Permission-Prompt ist, wenn der erste erscheint: „Claude fragt, bevor es etwas Wichtiges tut."
 
@@ -125,3 +153,13 @@ Permission-Prompt ist, wenn der erste erscheint: „Claude fragt, bevor es etwas
 - **Mac-Gatekeeper-Dialoge**: „App aus dem Internet geladen" bei Claude Desktop, Command-Line-Tools-Dialog bei `git --version`. Beides bestätigen, warten.
 - **Bestehende settings.json**: `/einrichten` fragt. Bei Kunden mit Connectoren (Gmail, Kalender) vorher reinschauen, was drinsteht, bevor „Übernehmen" gewählt wird.
 - **Permission-Prompts**: Anfänger klicken reflexartig „Ja". Beim ersten Prompt einmal vorlesen, was gefragt wird.
+- **Kunde hat schon Copilot** und fragt, wozu er ein zweites Werkzeug braucht. Keine Abwertung, die
+  Rollen sind verschieden: Copilot ist im Tenant zu Hause und findet, was dort liegt. Claude arbeitet in
+  Projekten, die sich über Wochen etwas merken, in Dateien, und in wiederverwendbaren Abläufen. In einem
+  Satz: *„Copilot weiß, was bei euch liegt. Claude merkt sich, wie du arbeitest."* Was **nicht** gesagt
+  wird: dass Copilot nicht handeln könne oder keine Unternehmensdaten sehe — beides ist überholt und
+  fällt im nächsten Gespräch mit seiner IT auf ihn zurück.
+- **Kunde fragt nach Postfach-Zugriff.** Geht, aber nicht heute: `m365-connector.md`. Im Termin nicht
+  anfangen, sonst hängt die verbleibende Zeit an einer Freigabe, die niemand im Raum erteilen kann.
+- **Vorwissen-Datei aus ChatGPT fehlt oder ist unbrauchbar.** Kein Grund umzuplanen. `/einrichten`
+  fragt einmal danach und läuft ohne genauso durch.

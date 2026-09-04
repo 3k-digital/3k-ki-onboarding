@@ -6,6 +6,10 @@ Bricht die Person ab, wird nichts geschrieben.
 
 Die Slots rechts füllen `templates/global-CLAUDE.md` und die Projektvorlagen aus `neues-projekt`.
 
+Liegt eine Datei mit Vorwissen aus einem anderen Werkzeug vor (Schritt 1b in `SKILL.md`), werden die
+daraus abgeleiteten Werte als **erste, vorausgewählte Option** angeboten und als „Aus deiner Datei: …"
+gekennzeichnet. Gefragt wird trotzdem jede Frage — bestätigen ist schnell, stilles Übernehmen wäre falsch.
+
 ## Frage 1 — Name, Anrede, Sprache
 
 Drei Teilfragen in einer Nachricht.
@@ -50,7 +54,14 @@ Slot-Texte:
 
 ## Frage 5 — Erstes Projekt
 
-Bewusst **privat**: ein Thema, das Spaß macht, kein Arbeits-Schmerzpunkt. Vier Teilfragen in einer Nachricht.
+Bewusst **privat**: ein Thema, das Spaß macht. Vier Teilfragen in einer Nachricht.
+
+Der Grund für die Regel ist nicht das Thema, sondern die Abhängigkeit: Ein Arbeits-Schmerzpunkt braucht
+meist Zugriff auf ein System, das im Termin nicht freigeschaltet ist, und scheitert dann an etwas, das
+niemand im Raum lösen kann. Bringt eine Person ihr Arbeitsthema von sich aus mit und **kommt es ohne
+Systemzugriff aus** — Texte, Vorlagen, Formulierungen, eingeworfene Beispiele —, dann ist es zulässig
+und oft das bessere Einstiegsprojekt, weil die Motivation schon da ist. Braucht es Zugriff auf Postfach,
+Laufwerk oder Fachanwendung: privates Thema nehmen, Arbeitsthema als Projekt zwei terminieren.
 
 | Teilfrage | Optionen | Slot |
 |---|---|---|

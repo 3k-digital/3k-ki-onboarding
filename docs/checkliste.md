@@ -5,6 +5,7 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 ## Vorab (eine Woche vorher)
 
 - [ ] Vorab-Mail geschickt (Windows- oder Mac-Variante)
+- [ ] Bei Kunden mit ChatGPT-Historie: Zusatzbaustein mitgeschickt, Link auf `wissensuebernahme-chatgpt.md`
 - [ ] Termin 90 min geblockt, Screenshare oder vor Ort geklärt
 - [ ] Repo-Link griffbereit
 
@@ -12,8 +13,9 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 
 **Gespräch (15 min)**
 - [ ] Bisherige KI-Nutzung, was genervt hat
+- [ ] Bei Copilot: Lizenzstufe gefragt (oder als Frage an die IT notiert)
 - [ ] Ängste und Erwartungen wörtlich notiert
-- [ ] Leidenschaftsthema gefunden (Person redet von selbst weiter)
+- [ ] Einstiegsthema gefunden (Person redet von selbst weiter, kommt ohne Systemzugriff aus)
 
 **Installation (10 min)**
 - [ ] Abo aktiv, Claude Desktop geöffnet, Tab „Code" war schon offen
@@ -23,12 +25,14 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 - [ ] Claude Desktop, Ordner `Claude-Projekte` geöffnet
 
 **`/einrichten` (20 min)**
+- [ ] Nach Vorwissen-Datei gefragt, falls vorhanden gemeinsam durchgesehen
 - [ ] Fünf Fragen beantwortet, Kunde hat selbst getippt
 - [ ] CLAUDE.md gemeinsam gelesen
 - [ ] settings.json übernommen (oder bewusst behalten)
 - [ ] Projektordner existiert mit CLAUDE.md und HANDOFF.md
 
 **Erste Aufgabe (30 min)**
+- [ ] Nur anonymisierte oder erfundene Beispiele verwendet, falls mit Arbeitsmaterial gearbeitet wurde
 - [ ] Sichtbares Ergebnis in `ergebnis/`
 - [ ] Ersten Permission-Prompt erklärt
 
