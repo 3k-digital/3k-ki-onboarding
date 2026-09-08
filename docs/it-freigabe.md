@@ -37,6 +37,37 @@ Der lokale Arbeitsmodus ist der eigentliche Unterschied zur Browser-Nutzung: Das
 schreibt Dateien in einem Ordner, den der Nutzer explizit auswählt. Wer das nicht möchte, kann die
 Freigabe auf einen eigens angelegten Ordner beschränken.
 
+## Worauf das Programm tatsächlich zugreifen kann
+
+Die häufigste Sorge im Gespräch ist ein Zugriff „auf das gesamte Netzwerk". Beschrieben ist damit eine
+Funktionsweise, die das Programm nicht hat: Es durchsucht keine Netzwerkfreigaben, meldet sich an keiner
+Domäne an und findet von sich aus keine Datenbestände. Daten gelangen auf genau drei Wegen hinein, und
+alle drei öffnet die nutzende Person selbst.
+
+**1. Ein ausgewähltes Verzeichnis.** Im Arbeitsmodus liest und schreibt das Programm Dateien in einem
+Ordner, den der Nutzer explizit auswählt. Was außerhalb liegt, ist für das Programm nicht vorhanden. Es
+läuft dabei im Kontext des angemeldeten Windows- beziehungsweise macOS-Kontos und kann folglich nicht mehr
+erreichen als diese Person ohnehin erreicht.
+
+**2. Connectoren zu Microsoft 365.** Das ist der Weg zu Postfach und Ablage — und derjenige, der
+vollständig bei der IT liegt. Der Connector arbeitet mit delegierten Berechtigungen und setzt einen
+einmaligen, tenant-weiten Consent durch einen Entra Global Administrator voraus. Ohne diese Zustimmung
+besteht kein Zugriff auf Inhalte im Tenant; eine einzelne Person kann sich das nicht selbst freischalten.
+Der Zugriff lässt sich anschließend über „Assignment required" auf eine Pilotgruppe begrenzen. Details
+in `m365-connector.md`.
+
+**3. Was hochgeladen oder eingefügt wird.** Dateien und Text, die die nutzende Person aktiv übergibt.
+
+Zur Vollständigkeit gehört die Gegenseite: Innerhalb des freigegebenen Ordners liest das Programm alles,
+und im Arbeitsmodus führt es mit den Rechten des angemeldeten Kontos auch Befehle aus. Liegt der Ordner
+auf einem Netzlaufwerk, reicht der Zugriff so weit wie das Konto dort reicht. Die Steuerungsmöglichkeiten
+sind entsprechend die Wahl des Ordners, die Rechte des Kontos, die Connector-Freigabe und die Rückfragen,
+die das Programm vor folgenreichen Aktionen stellt. Eine Aussage wie „nur Leserechte" wäre falsch und
+im Consent-Dialog auch sofort widerlegbar.
+
+Damit wird aus der Frage, ob überhaupt zugegriffen werden darf, eine Frage des Umfangs — und der lässt
+sich vorab festlegen.
+
 ## Frage 2 — Vertragliche Grundlage
 
 Der Punkt, der in der Praxis für Verwirrung sorgt: **Ein Auftragsverarbeitungsvertrag muss bei Anthropic
