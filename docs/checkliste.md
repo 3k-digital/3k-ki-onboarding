@@ -4,6 +4,10 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 
 ## Vorab (eine Woche vorher)
 
+- [ ] Bei Dienstrechner: geklärt, ob auf dem Gerät installiert werden darf — Frage mit Programmname
+      (Claude Desktop) und Herausgeber (Anthropic) an die IT, nicht als Frage nach „KI"
+- [ ] Kontotyp geklärt: verwaltetes Team-/Enterprise-Konto oder persönliches Pro-Konto (entscheidet,
+      ob mit echtem Arbeitsmaterial gearbeitet werden darf)
 - [ ] Vorab-Mail geschickt (Windows- oder Mac-Variante); Git/CLT darin als optional gekennzeichnet
 - [ ] Falls möglich: kurzes Teams-Gespräch vorab für Abo, App und Git — spart im Termin 10 Minuten
 - [ ] Bei Kunden mit ChatGPT-Historie: Hinweis mitgeschickt, ChatGPT-Zugang griffbereit zu halten
@@ -24,6 +28,13 @@ Zum Ausdrucken oder Abhaken. Details in `playbook.md`.
 - [ ] Repo geclont
 - [ ] Install-Script gelaufen, keine `ABBRUCH`-Zeile, Warnungen gelesen
 - [ ] Claude Desktop, Ordner `Claude-Projekte` geöffnet
+- [ ] Falls die App durch die IT blockiert ist: auf den Browser-Pfad gewechselt statt weiterzusuchen
+
+**Browser-Pfad (nur falls die Desktop-App nicht installierbar ist)**
+- [ ] Projekt auf claude.ai angelegt, Projektanweisung gemeinsam gefüllt (ersetzt `/einrichten`)
+- [ ] Wissensraum mit den ersten Dateien bestückt
+- [ ] Gesagt, was heute fehlt und was nach der Freigabe dazukommt
+- [ ] `it-freigabe.md` mitgegeben, Freigabe als Aufgabe für den Folgetermin notiert
 
 **`/einrichten` (20 min)**
 - [ ] Nach ChatGPT-Wissen gefragt; bei Bedarf Kurzpfad gemacht (ca. 5 min)
