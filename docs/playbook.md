@@ -25,6 +25,14 @@ Cowork-Tab fängt jedes Mal von vorne an."*
 
 Ziel: Der Termin startet ohne Downloads und Wartezeiten. Textbausteine, Anrede anpassen.
 
+**Bei Kunden mit Dienstrechner vor allem anderen: Darf auf dem Gerät überhaupt installiert werden?** Nicht
+im Sinne von Adminrechten, sondern: Unterbindet eine Endpoint-Richtlinie die Installation nicht
+freigegebener Programme? Die Frage gehört vor die Vorab-Mail, weil sie über den ganzen Termin entscheidet.
+Kann der Kunde sie nicht beantworten — der Normalfall —, ist es eine Frage an seine IT, und zwar konkret
+mit Programmname (Claude Desktop) und Herausgeber (Anthropic), nicht als allgemeine Frage nach „KI".
+Kommt die Antwort nicht rechtzeitig oder fällt sie negativ aus, ist der Termin nicht verloren: dann läuft
+er auf dem Browser-Pfad (siehe unten). Argumente für das IT-Gespräch stehen in `it-freigabe.md`.
+
 Punkt 1 und 2 (Abo, Desktop-App) sind Pflicht — ohne sie ist der Termin verloren. **Punkt 3 (Git bzw.
 Command Line Tools) ist ausdrücklich optional.** Wer nicht regelmäßig etwas installiert, scheitert daran
 allein oder installiert das Falsche, und beides kostet im Termin mehr Zeit, als gemeinsam neu anzufangen.
@@ -120,6 +128,25 @@ bash ~/3k-ki-onboarding/install/mac.sh
 Das Script meldet jeden Schritt mit `[3K]`. Warnungen lesen, Abbrüche beheben, Script erneut ausführen.
 Danach: Claude Desktop, Tab „Code", Ordner `Claude-Projekte` wählen, `/einrichten` eingeben.
 
+### Fallback: Browser-Pfad (wenn die Desktop-App blockiert ist)
+
+Ohne Desktop-App fällt der gesamte Kit-Teil weg: kein Code-Tab, kein `~/.claude`, keine Skills, kein
+`/einrichten`, kein `/feierabend`. Was bleibt, ist claude.ai im Browser, und das trägt einen
+90-Minuten-Termin.
+
+- **Projekte statt Projektordner.** Ein Projekt pro Thema, mit eigener Projektanweisung („so arbeite ich,
+  so schreibe ich") und eigenem Wissensraum für hochgeladene Dateien. Das ist inhaltlich die Rolle, die
+  sonst die CLAUDE.md spielt — im Browser gepflegt statt in einer Datei.
+- **Der Gesprächsleitfaden gilt unverändert.** Die Fragen aus `/einrichten` stellst du selbst und
+  schreibst die Antworten gemeinsam in die Projektanweisung. Dauert länger als der Skill, führt zum
+  selben Ergebnis.
+- **Erste Aufgabe wie geplant**, Ergebnis als Download statt in `ergebnis/`.
+- **Einmal offen sagen, nicht verschweigen:** Der Kunde bekommt heute die Arbeitsweise, aber noch nicht
+  das Gedächtnis in Dateiform. Sobald die App freigegeben ist, wandert die Projektanweisung in eine
+  CLAUDE.md, und alles Weitere baut darauf auf. Nichts von heute ist verloren.
+
+Damit hat der Folgetermin eine klare Aufgabe: Freigabe klären, dann nachinstallieren.
+
 ### `/einrichten` moderieren (20 min)
 
 - Der Kunde tippt oder wählt selbst. Du erklärst nur, wenn eine Frage unklar ist.
@@ -163,6 +190,15 @@ Permission-Prompt ist, wenn der erste erscheint: „Claude fragt, bevor es etwas
 
 - **Git fehlt** (Windows): Code-Tab startet nicht oder Install-Script bricht ab. Git for Windows nachinstallieren, Claude neu starten. Der Regelfall, nicht die Ausnahme — Zeit dafür einplanen.
 - **Command Line Tools fehlen** (Mac): `install/mac.sh` bricht mit einer Meldung ab. `git --version` im Terminal eingeben, Dialog bestätigen, warten. Dauert je nach Leitung mehrere Minuten und lässt sich nicht beschleunigen; in der Zeit das Gespräch weiterführen statt schweigend zuzusehen.
+- **Git ist installiert, aber `git` wird nicht gefunden** (Windows): Die Installation lief durch, das Clonen
+  scheitert trotzdem — Git liegt dann nicht im PATH. Erster Versuch: PowerShell schließen und neu öffnen,
+  ein Fenster von vor der Installation kennt den neuen PATH nicht. Bleibt es dabei, wurde bei der
+  Installation „Use Git from Git Bash only" gewählt: entweder Git for Windows erneut installieren und
+  „Git from the command line and also from 3rd-party software" wählen, oder für heute „Git Bash" aus dem
+  Startmenü öffnen und die Befehle dort ausführen.
+- **Desktop-App durch die IT blockiert**: Nicht mit fehlenden Adminrechten verwechseln — eine Richtlinie
+  unterbindet die Installation, teils erst nach dem Download. Wird im Termin nicht gelöst. Auf den
+  Browser-Pfad wechseln, Freigabe zum Thema des Folgetermins machen, `it-freigabe.md` mitgeben.
 - **Claude Desktop nie geöffnet**: `~/.claude` existiert nicht, Script bricht ab. Einmal öffnen, anmelden, Tab „Code".
 - **Windows-Benutzerordner mit Leerzeichen oder Umlaut**: Script warnt. Meist harmlos; bei „Datei nicht gefunden" zuerst hier nachsehen.
 - **Mac-Gatekeeper-Dialoge**: „App aus dem Internet geladen" bei Claude Desktop, Command-Line-Tools-Dialog bei `git --version`. Beides bestätigen, warten.
