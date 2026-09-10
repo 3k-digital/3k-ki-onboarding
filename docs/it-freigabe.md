@@ -37,6 +37,26 @@ Der lokale Arbeitsmodus ist der eigentliche Unterschied zur Browser-Nutzung: Das
 schreibt Dateien in einem Ordner, den der Nutzer explizit auswählt. Wer das nicht möchte, kann die
 Freigabe auf einen eigens angelegten Ordner beschränken.
 
+### Die Blockade einordnen, bevor man sie diskutiert
+
+Wird die Installation abgewiesen, lohnt eine Gegenprobe, bevor irgendjemand über Richtlinien spricht:
+**Lässt sich ein anderes, unverdächtiges Programm installieren?** Git for Windows eignet sich gut, weil
+es in praktisch jedem Software-Katalog steht.
+
+- **Anderes Programm geht durch, dieses nicht** → keine pauschale Installationssperre, sondern ein
+  Allowlist- oder Reputationsmechanismus. Auf Windows typischerweise Defender SmartScreen (bewertet
+  Herausgeber nach Verbreitung, blockt Unbekanntes teils erst beim Ausführen), oder eine explizite
+  Positivliste über AppLocker, Windows Defender Application Control oder Intune. Das ist die gute
+  Variante: Eine Freigabe ist dann ein Katalogeintrag, kein Grundsatzbeschluss über KI.
+- **Nichts lässt sich installieren** → generelle Richtlinie. Dann ist es eine Ausnahme-Entscheidung, und
+  das Gespräch wird länger.
+
+Für einen Katalogeintrag braucht die IT üblicherweise Herausgebernamen und Signatur der Datei,
+Bezugsquelle und Installationspfad. Signatur und Herausgeber lassen sich am heruntergeladenen Installer
+direkt ablesen: Rechtsklick, Eigenschaften, Reiter *Digitale Signaturen*. Diese Angaben aus der
+konkreten Datei nehmen und nicht aus einer Dokumentation abschreiben — sie ändern sich mit jeder
+Version, und eine Angabe, die der Admin nicht bestätigt findet, kostet mehr Zeit als sie spart.
+
 ## Worauf das Programm tatsächlich zugreifen kann
 
 Die häufigste Sorge im Gespräch ist ein Zugriff „auf das gesamte Netzwerk". Beschrieben ist damit eine
@@ -118,6 +138,8 @@ Arbeitsmaterial gearbeitet werden soll, führt der Weg über ein Konto unter den
 
 - Welcher Kontotyp liegt vor oder ist vorgesehen: persönliches Pro-Konto oder ein vom Unternehmen
   verwaltetes Team- beziehungsweise Enterprise-Konto?
-- Ist die Blockade eine generelle Endpoint-Richtlinie oder eine Einzelfallentscheidung zu diesem Programm?
+- Ist die Blockade eine generelle Endpoint-Richtlinie oder eine Einzelfallentscheidung zu diesem
+  Programm? Die Gegenprobe oben beantwortet das meist schon vor dem Gespräch.
+- Was genau braucht ihr, um das Programm in den Software-Katalog aufzunehmen?
 - Wird EU-Datenresidenz gefordert? Falls ja, ist das eine Architekturentscheidung und keine Vertragsfrage.
 - Wer entscheidet, und was braucht diese Stelle als Nachweis?
